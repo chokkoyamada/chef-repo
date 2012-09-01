@@ -1,0 +1,26 @@
+set autoindent
+set showmatch
+set smartindent
+
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set nowrapscan
+set paste
+
+set wildmode=longest:full
+set wildmenu
+
+colorscheme slate
+syntax on
+set encoding=utf-8
+set fileencodings=utf-8,ucs-bom,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932
+
+filetype plugin on
+autocmd FileType python setl autoindent
+autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+autocmd FileType python setl expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType ruby   setl autoindent
+autocmd FileType ruby   setl expandtab tabstop=2 shiftwidth=2 softtabstop=2
+
