@@ -12,7 +12,7 @@ package "git" do
 end
 
 script "install_rvm" do
-  not_if "rubytest=`ruby -e 'puts RUBY_VERSION' | grep '1.9.3'`; echo $?"
+  not_if "rubytest=`ruby -e 'puts RUBY_VERSION' | grep '1.9.3'`"
   interpreter "bash"
   user "root"
   cwd "/usr/local/src/"
