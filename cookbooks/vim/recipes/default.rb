@@ -12,6 +12,8 @@ package "vim" do
 end
 
 template "/home/vagrant/.vimrc" do
+  owner "vagrant"
+  group "vagrant"
   source "vimrc.erb"
 end
 
