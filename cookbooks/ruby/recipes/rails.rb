@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-%(rails execjs therubyracer).each do |gem_name|
+%w(rails execjs therubyracer).each do |gem_name|
   gem_package gem_name do
     action :install
   end
