@@ -11,9 +11,9 @@ package "vim" do
   action :install
 end
 
-template "/home/vagrant/.vimrc" do
-  owner "vagrant"
-  group "vagrant"
+template "/home/#{node[:user_name]}/.vimrc" do
+  owner node[:user_name]
+  group node[:user_name]
   source "vimrc.erb"
 end
 
