@@ -1,0 +1,8 @@
+LoadModule wsgi_module modules/mod_wsgi.so
+
+WSGIScriptAlias /wsgi /var/www/wsgi/index.wsgi
+
+<Directory /var/www/bottle>
+Order deny,allow
+Allow from all
+</Directory>
