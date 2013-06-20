@@ -14,7 +14,7 @@ package "mod_wsgi" do
 end
 
 tempalte "/etc/httpd/conf.d/wsgi.conf" do
-  source "wsgi.conf"
+  source "wsgi.conf.erb"
   action :create
   mode 0644
   notifies :restart, "service[httpd]" 
